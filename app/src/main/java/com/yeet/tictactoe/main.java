@@ -27,7 +27,7 @@ public class main extends AppCompatActivity {
         @Override
         protected void onCreate (Bundle savedInstanceState){
             super.onCreate(savedInstanceState);
-
+    //why u buuly me
 
 
             setContentView(R.layout.game);
