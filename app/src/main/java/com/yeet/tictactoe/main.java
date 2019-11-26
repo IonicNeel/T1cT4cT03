@@ -96,6 +96,10 @@ public class main extends AppCompatActivity {
                             startActivity(pl2wins);
                         }
                     }
+                    else if(chances == 10){
+                        Intent draw = new Intent(getApplicationContext(), draw.class);
+                        startActivity(draw);
+                    }
                 }
             });
 
@@ -131,6 +135,10 @@ public class main extends AppCompatActivity {
                             Intent pl2wins = new Intent(getApplicationContext(), p2wins.class);
                             startActivity(pl2wins);
                         }
+                    }
+                    else if(chances == 10){
+                        Intent draw = new Intent(getApplicationContext(), draw.class);
+                        startActivity(draw);
                     }
                 }
             });
@@ -175,6 +183,10 @@ public class main extends AppCompatActivity {
                             startActivity(pl2wins);
                         }
                     }
+                    else if(chances == 10){
+                        Intent draw = new Intent(getApplicationContext(), draw.class);
+                        startActivity(draw);
+                    }
 
                 }
             });
@@ -210,6 +222,10 @@ public class main extends AppCompatActivity {
                             Intent pl2wins = new Intent(getApplicationContext(), p2wins.class);
                             startActivity(pl2wins);
                         }
+                    }
+                    else if(chances == 10){
+                        Intent draw = new Intent(getApplicationContext(), draw.class);
+                        startActivity(draw);
                     }
 
                 }
@@ -262,6 +278,10 @@ public class main extends AppCompatActivity {
                             startActivity(pl2wins);
                         }
                     }
+                    else if(chances == 10){
+                        Intent draw = new Intent(getApplicationContext(), draw.class);
+                        startActivity(draw);
+                    }
 
                 }
             });
@@ -297,6 +317,10 @@ public class main extends AppCompatActivity {
                             Intent pl2wins = new Intent(getApplicationContext(), p2wins.class);
                             startActivity(pl2wins);
                         }
+                    }
+                    else if(chances == 10){
+                        Intent draw = new Intent(getApplicationContext(), draw.class);
+                        startActivity(draw);
                     }
 
                 }
@@ -342,6 +366,10 @@ public class main extends AppCompatActivity {
                             startActivity(pl2wins);
                         }
                     }
+                    else if(chances == 10){
+                        Intent draw = new Intent(getApplicationContext(), draw.class);
+                        startActivity(draw);
+                    }
 
                 }
             });
@@ -377,6 +405,10 @@ public class main extends AppCompatActivity {
                             Intent pl2wins = new Intent(getApplicationContext(), p2wins.class);
                             startActivity(pl2wins);
                         }
+                    }
+                    else if(chances == 10){
+                        Intent draw = new Intent(getApplicationContext(), draw.class);
+                        startActivity(draw);
                     }
 
                 }
@@ -423,6 +455,11 @@ public class main extends AppCompatActivity {
                         }
                     }
 
+                    else if(chances == 10){
+                        Intent draw = new Intent(getApplicationContext(), draw.class);
+                        startActivity(draw);
+                    }
+
                 }
             });
 
@@ -431,3 +468,4 @@ public class main extends AppCompatActivity {
 
 
 }
+
