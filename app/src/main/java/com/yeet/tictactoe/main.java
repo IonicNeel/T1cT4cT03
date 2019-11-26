@@ -24,13 +24,15 @@ public class main extends AppCompatActivity {
             i++;
         }
     }
-
-
         @Override
         protected void onCreate (Bundle savedInstanceState){
             super.onCreate(savedInstanceState);
 
+
+
             setContentView(R.layout.game);
+
+            
 
             b1 = findViewById(R.id.b1);
             b2 = findViewById(R.id.b2);
@@ -68,22 +70,30 @@ public class main extends AppCompatActivity {
                     }
 
                     if (grid[0][0] == grid[0][1] && grid[0][1] == grid[0][2]) {
-                        if (grid[0][1] == 1) {
-                            //player 1 wins
+                        if (grid[0][0] == 1) {
+                            Intent pl1wins = new Intent(getApplicationContext(), p1wins.class);
+                            startActivity(pl1wins);                           
+                            
                         } else {
-                            // player 2 wins
+                            Intent pl2wins = new Intent(getApplicationContext(), p2wins.class);
+                            startActivity(pl2wins);
                         }
                     } else if (grid[0][0] == grid[1][0] && grid[1][0] == grid[2][0]) {
-                        if (grid[0][1] == 1) {
-                            //player 1 wins
+                        if (grid[0][0] == 1) {
+                            Intent pl1wins = new Intent(getApplicationContext(), p1wins.class);
+                            startActivity(pl1wins);
+                            
                         } else {
-                            // player 2 wins
+                            Intent pl2wins = new Intent(getApplicationContext(), p2wins.class);
+                            startActivity(pl2wins);
                         }
                     } else if (grid[0][0] == grid[1][1] && grid[1][1] == grid[2][2]) {
-                        if (grid[0][1] == 1) {
-                            //player 1 wins
+                        if (grid[0][0] == 1) {
+                            Intent pl1wins = new Intent(getApplicationContext(), p1wins.class);
+                            startActivity(pl1wins);
                         } else {
-                            // player 2 wins
+                            Intent pl2wins = new Intent(getApplicationContext(), p2wins.class);
+                            startActivity(pl2wins);
                         }
                     }
                 }
@@ -107,15 +117,19 @@ public class main extends AppCompatActivity {
 
                     if (grid[0][1] == grid[0][0] && grid[0][1] == grid[0][2]) {
                         if (grid[0][1] == 1) {
-                            //player 1 wins
+                            Intent pl1wins = new Intent(getApplicationContext(), p1wins.class);
+                            startActivity(pl1wins);
                         } else {
-                            // player 2 wins
+                            Intent pl2wins = new Intent(getApplicationContext(), p2wins.class);
+                            startActivity(pl2wins);
                         }
                     } else if (grid[0][1] == grid[1][1] && grid[1][1] == grid[2][1]) {
                         if (grid[0][1] == 1) {
-                            //player 1 wins
+                            Intent pl1wins = new Intent(getApplicationContext(), p1wins.class);
+                            startActivity(pl1wins);
                         } else {
-                            // player 2 wins
+                            Intent pl2wins = new Intent(getApplicationContext(), p2wins.class);
+                            startActivity(pl2wins);
                         }
                     }
                 }
@@ -138,21 +152,27 @@ public class main extends AppCompatActivity {
 
                     if (grid[0][0] == grid[0][1] && grid[0][1] == grid[0][2]) {
                         if (grid[0][2] == 1) {
-                            //player 1 wins
+                            Intent pl1wins = new Intent(getApplicationContext(), p1wins.class);
+                            startActivity(pl1wins);
                         } else {
-                            // player 2 wins
+                            Intent pl2wins = new Intent(getApplicationContext(), p2wins.class);
+                            startActivity(pl2wins);
                         }
                     } else if (grid[0][2] == grid[1][2] && grid[1][2] == grid[2][2]) {
                         if (grid[0][2] == 1) {
-                            //player 1 wins
+                            Intent pl1wins = new Intent(getApplicationContext(), p1wins.class);
+                            startActivity(pl1wins);
                         } else {
-                            // player 2 wins
+                            Intent pl2wins = new Intent(getApplicationContext(), p2wins.class);
+                            startActivity(pl2wins);
                         }
                     } else if (grid[0][2] == grid[1][1] && grid[1][1] == grid[2][0]) {
                         if (grid[1][1] == 1) {
-                            //player 1 wins
+                            Intent pl1wins = new Intent(getApplicationContext(), p1wins.class);
+                            startActivity(pl1wins);
                         } else {
-                            //player 2 wins
+                            Intent pl2wins = new Intent(getApplicationContext(), p2wins.class);
+                            startActivity(pl2wins);
                         }
                     }
 
@@ -176,15 +196,19 @@ public class main extends AppCompatActivity {
 
                     if (grid[1][0] == grid[1][1] && grid[1][1] == grid[1][2]) {
                         if (grid[1][0] == 1) {
-                            //player 1 wins
+                            Intent pl1wins = new Intent(getApplicationContext(), p1wins.class);
+                            startActivity(pl1wins);
                         } else {
-                            // player 2 wins
+                            Intent pl2wins = new Intent(getApplicationContext(), p2wins.class);
+                            startActivity(pl2wins);
                         }
                     } else if (grid[1][0] == grid[0][0] && grid[1][0] == grid[2][0]) {
                         if (grid[1][0] == 1) {
-                            //player 1 wins
+                            Intent pl1wins = new Intent(getApplicationContext(), p1wins.class);
+                            startActivity(pl1wins);
                         } else {
-                            // player 2 wins
+                            Intent pl2wins = new Intent(getApplicationContext(), p2wins.class);
+                            startActivity(pl2wins);
                         }
                     }
 
@@ -207,27 +231,35 @@ public class main extends AppCompatActivity {
                     }
                     if (grid[1][0] == grid[1][1] && grid[1][1] == grid[1][2]) {
                         if (grid[1][1] == 1) {
-                            //player 1 wins
+                            Intent pl1wins = new Intent(getApplicationContext(), p1wins.class);
+                            startActivity(pl1wins);
                         } else {
-                            // player 2 wins
+                            Intent pl2wins = new Intent(getApplicationContext(), p2wins.class);
+                            startActivity(pl2wins);
                         }
                     } else if (grid[1][1] == grid[0][1] && grid[1][1] == grid[2][1]) {
                         if (grid[1][1] == 1) {
-                            //player 1 wins
+                            Intent pl1wins = new Intent(getApplicationContext(), p1wins.class);
+                            startActivity(pl1wins);
                         } else {
-                            // player 2 wins
+                            Intent pl2wins = new Intent(getApplicationContext(), p2wins.class);
+                            startActivity(pl2wins);
                         }
                     } else if (grid[0][0] == grid[1][1] && grid[1][1] == grid[2][2]) {
                         if (grid[0][1] == 1) {
-                            //player 1 wins
+                            Intent pl1wins = new Intent(getApplicationContext(), p1wins.class);
+                            startActivity(pl1wins);
                         } else {
-                            // player 2 wins
+                            Intent pl2wins = new Intent(getApplicationContext(), p2wins.class);
+                            startActivity(pl2wins);
                         }
                     } else if (grid[0][2] == grid[1][1] && grid[1][1] == grid[2][0]) {
                         if (grid[1][1] == 1) {
-                            //player 1 wins
+                            Intent pl1wins = new Intent(getApplicationContext(), p1wins.class);
+                            startActivity(pl1wins);
                         } else {
-                            //player 2 wins
+                            Intent pl2wins = new Intent(getApplicationContext(), p2wins.class);
+                            startActivity(pl2wins);
                         }
                     }
 
@@ -251,15 +283,19 @@ public class main extends AppCompatActivity {
 
                     if (grid[1][0] == grid[1][1] && grid[1][1] == grid[1][2]) {
                         if (grid[1][0] == 1) {
-                            //player 1 wins
+                            Intent pl1wins = new Intent(getApplicationContext(), p1wins.class);
+                            startActivity(pl1wins);
                         } else {
-                            // player 2 wins
+                            Intent pl2wins = new Intent(getApplicationContext(), p2wins.class);
+                            startActivity(pl2wins);
                         }
                     } else if (grid[1][2] == grid[0][2] && grid[1][2] == grid[2][2]) {
                         if (grid[1][2] == 1) {
-                            //player 1 wins
+                            Intent pl1wins = new Intent(getApplicationContext(), p1wins.class);
+                            startActivity(pl1wins);
                         } else {
-                            // player 2 wins
+                            Intent pl2wins = new Intent(getApplicationContext(), p2wins.class);
+                            startActivity(pl2wins);
                         }
                     }
 
@@ -283,21 +319,27 @@ public class main extends AppCompatActivity {
 
                     if (grid[0][0] == grid[1][0] && grid[1][0] == grid[2][0]) {
                         if (grid[2][0] == 1) {
-                            //player 1 wins
+                            Intent pl1wins = new Intent(getApplicationContext(), p1wins.class);
+                            startActivity(pl1wins);
                         } else {
-                            // player 2 wins
+                            Intent pl2wins = new Intent(getApplicationContext(), p2wins.class);
+                            startActivity(pl2wins);
                         }
                     } else if (grid[2][0] == grid[2][1] && grid[2][1] == grid[2][2]) {
                         if (grid[2][0] == 1) {
-                            //player 1 wins
+                            Intent pl1wins = new Intent(getApplicationContext(), p1wins.class);
+                            startActivity(pl1wins);
                         } else {
-                            //player 2 wins
+                            Intent pl2wins = new Intent(getApplicationContext(), p2wins.class);
+                            startActivity(pl2wins);
                         }
                     } else if (grid[0][2] == grid[1][1] && grid[1][1] == grid[2][0]) {
                         if (grid[1][1] == 1) {
-                            //player 1 wins
+                            Intent pl1wins = new Intent(getApplicationContext(), p1wins.class);
+                            startActivity(pl1wins);
                         } else {
-                            //player 2 wins
+                            Intent pl2wins = new Intent(getApplicationContext(), p2wins.class);
+                            startActivity(pl2wins);
                         }
                     }
 
@@ -321,15 +363,19 @@ public class main extends AppCompatActivity {
 
                     if (grid[0][1] == grid[1][1] && grid[1][1] == grid[2][1]) {
                         if (grid[0][1] == 1) {
-                            //player 1 wins
+                            Intent pl1wins = new Intent(getApplicationContext(), p1wins.class);
+                            startActivity(pl1wins);
                         } else {
-                            // player 2 wins
+                            Intent pl2wins = new Intent(getApplicationContext(), p2wins.class);
+                            startActivity(pl2wins);
                         }
                     } else if (grid[2][0] == grid[2][1] && grid[2][1] == grid[2][2]) {
                         if (grid[2][0] == 1) {
-                            //player 1 wins
+                            Intent pl1wins = new Intent(getApplicationContext(), p1wins.class);
+                            startActivity(pl1wins);
                         } else {
-                            //player 2 wins
+                            Intent pl2wins = new Intent(getApplicationContext(), p2wins.class);
+                            startActivity(pl2wins);
                         }
                     }
 
@@ -352,22 +398,28 @@ public class main extends AppCompatActivity {
                     }
 
                     if (grid[0][2] == grid[1][2] && grid[1][2] == grid[2][2]) {
-                        if (grid[0][2] == 1) {
-                            //player 1 wins
+                        if (grid[2][2] == 1) {
+                            Intent pl1wins = new Intent(getApplicationContext(), p1wins.class);
+                            startActivity(pl1wins);
                         } else {
-                            // player 2 wins
+                            Intent pl2wins = new Intent(getApplicationContext(), p2wins.class);
+                            startActivity(pl2wins);
                         }
                     } else if (grid[2][0] == grid[2][1] && grid[2][1] == grid[2][2]) {
-                        if (grid[2][0] == 1) {
-                            //player 1 wins
+                        if (grid[2][2] == 1) {
+                            Intent pl1wins = new Intent(getApplicationContext(), p1wins.class);
+                            startActivity(pl1wins);
                         } else {
-                            //player 2 wins
+                            Intent pl2wins = new Intent(getApplicationContext(), p2wins.class);
+                            startActivity(pl2wins);
                         }
                     } else if (grid[0][0] == grid[1][1] && grid[1][1] == grid[2][2]) {
-                        if (grid[0][1] == 1) {
-                            //player 1 wins
+                        if (grid[2][2] == 1) {
+                            Intent pl1wins = new Intent(getApplicationContext(), p1wins.class);
+                            startActivity(pl1wins);
                         } else {
-                            // player 2 wins
+                            Intent pl2wins = new Intent(getApplicationContext(), p2wins.class);
+                            startActivity(pl2wins);
                         }
                     }
 

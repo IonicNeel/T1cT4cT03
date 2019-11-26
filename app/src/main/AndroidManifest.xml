@@ -17,6 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name =".main" ></activity>
+        <activity android:name=".p1wins"></activity>
+        <activity android:name=".p2wins"></activity>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
